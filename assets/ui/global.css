@@ -452,6 +452,12 @@ body span.ilhabela{
 
 /* resX and resY */
 
+@media screen and (max-width: 1282px){
+    .main-prot .container-prot .content-prot .download-main .download-container .download-content .down-btn a{
+        padding: 15px 20px;
+    }
+}
+
 @media screen and (max-width: 1039px){
     .main .container .main-content .main-btn{
         margin: 10px 0;
@@ -460,6 +466,12 @@ body span.ilhabela{
 
     .main .container .main-content .main-btn .btn{
         margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .main .container .main-content {
+        padding: 50px;
     }
 }
 
@@ -486,7 +498,11 @@ body span.ilhabela{
     }
 
     .main-prot .container-prot .content-prot .download-main .download-container .download-content .down-btn a{
-        padding: 15px 50px;
+        padding: 15px 20px;
+    }
+
+    .main-prot .container-prot .content-prot .download-main .download-container .download-content .down {
+        padding: 40px 80px;
     }
 
     /* ranks / groups */
