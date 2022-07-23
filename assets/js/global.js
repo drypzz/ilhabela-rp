@@ -17,6 +17,41 @@ document.querySelector('#mobile-menu').addEventListener('click',
     }
 );
 
+// cards
+
+const controls = document.querySelectorAll('.control');
+
+const items = document.querySelectorAll('.item-cards');
+const maxItems = items.length;
+
+let curruentItem = 0;
+
+controls.forEach(control => {
+    control.addEventListener('click', () => {
+        const isLeft = control.classList.contains('arrow-left');
+
+        if(isLeft){
+            curruentItem -= 1;
+        }else{
+            curruentItem += 1;
+        };
+
+        if(curruentItem >= maxItems){
+            curruentItem = 0;
+        };
+
+        if(curruentItem < 0){
+            curruentItem = maxItems - 1;
+        };
+
+        items.forEach(item => item.classList.remove('focus'));
+        controls.forEach(item => item.classList.remove('curruent-item'));
+
+        items[curruentItem].classList.add('focus');
+        controls[curruentItem].classList.add('curruent-item');
+    });
+});
+
 // date
 
 date = function(){
