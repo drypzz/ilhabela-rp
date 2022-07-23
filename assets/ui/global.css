@@ -316,6 +316,7 @@ body span.ilhabela{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: nowrap;
 }
 
 .main-prot .container-prot .content-prot .download-main .download-container .download-content{
@@ -450,6 +451,69 @@ body span.ilhabela{
     background-color: #7eaee9;
 }
 
+/* footer */
+
+.footer{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    padding-bottom: 50px;
+    background: #00040f;
+}
+
+.footer .footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .footer-container .footer-content{
+    margin: 0 20px;
+}
+
+.footer .footer-container .footer-content p.title{
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer .footer-container .footer-content a{
+    color: #727272;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    transition: all .5s ease;
+}
+
+.footer .footer-container .footer-content a:hover{
+    color: #006ef1b8;
+}
+
+.footer .footer-container .footer-content p.copyright{
+    max-width: 500px;
+    margin: 20px 0;
+}
+
+.footer .footer-container .footer-content .payments img{
+    width: 70px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.footer .footer-container .footer-content .about{
+    height: 100%;
+    width: 100%;
+}
+
+.footer .footer-container .footer-content .about .container-about{
+    margin: 20px 0;
+}
+
+.footer .footer-container .footer-content .about .container-about .content-about{
+    margin: 10px 0;
+}
+
 /* resX and resY */
 
 @media screen and (max-width: 1282px){
@@ -476,6 +540,36 @@ body span.ilhabela{
 }
 
 @media screen and (max-width: 960px){
+    /* footer */
+
+    .footer{
+        padding-bottom: 0;
+    }
+
+    .footer .footer-container{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .footer .footer-container .footer-content{
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .footer .footer-container .footer-content:nth-child(2){
+        border-top: 1px solid #006ef1b8;
+        width: 100%;
+    }
+
+    .footer .footer-container .footer-content:nth-child(2) p.title{
+        margin-top: 20px;
+    }
+
+    .footer .footer-container .footer-content .payments img{
+        width: 50px;
+    }
+
     /* prot */
 
     .main-prot{
