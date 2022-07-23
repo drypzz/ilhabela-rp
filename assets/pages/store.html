@@ -11,7 +11,7 @@
         <link rel='shortcut icon' href='../gfx/ilhabela-shortcut2.png' type='image/x-icon'>
 
         <!-- css -->
-        <link rel='stylesheet' href='../ui/global.css'>
+        <link rel='stylesheet' href='../ui/global.min.css'>
 
         <!-- icon's -->
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css'>
@@ -87,7 +87,7 @@
                         <div class='store-content-items'>
                             <div class='card-main'>
                                 <div>
-                                    <img src='../gfx/store/fac.png' alt=''>
+                                    <img class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/store/fac.png' alt=''>
                                 </div>
                                 <div class='card'>
                                     <h1>FACÇÃO</h1>
@@ -102,12 +102,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> <!-- fac -->
     
                         <div class='store-content-items'>
                             <div class='card-main'>
                                 <div>
-                                    <img src='../gfx/store/corp.png' alt=''>
+                                    <img class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/store/corp.png' alt=''>
                                 </div>
                                 <div class='card'>
                                     <h1>CORPORAÇÃO</h1>
@@ -122,12 +122,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> <!-- corp -->
 
                         <div class='store-content-items'>
                             <div class='card-main'>
                                 <div>
-                                    <img src='../gfx/store/org.png' alt=''>
+                                    <img class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/store/org.png' alt=''>
                                 </div>
                                 <div class='card'>
                                     <h1>ORGANIZAÇÃO</h1>
@@ -142,14 +142,14 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> <!-- org -->
                     </div>
 
                     <div class='item-cards'>
                         <div class='store-content-items'>
                             <div class='card-main'>
                                 <div>
-                                    <img src='../gfx/vips/vip-b.png' alt=''>
+                                    <img class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/vips/vip-b.png' alt=''>
                                 </div>
                                 <div class='card'>
                                     <h1>VIP BASIC</h1>
@@ -164,12 +164,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> <!-- basic -->
     
                         <div class='store-content-items'>
                             <div class='card-main'>
                                 <div>
-                                    <img src='../gfx/vips/vip-p.png' alt=''>
+                                    <img class='unselectable' draggable='false' (dragstart)='false;' src='../gfx/vips/vip-p.png' alt=''>
                                 </div>
                                 <div class='card'>
                                     <h1>VIP PREMIUM</h1>
@@ -184,7 +184,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> <!-- premium -->
                     </div>
 
                 </div>
@@ -193,7 +193,7 @@
         </div>
 
         <!-- js -->
-        <script src='../js/global.js'></script>
+        <script src='../js/global.min.js'></script>
 
         <!-- jquery -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
