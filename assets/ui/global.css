@@ -124,6 +124,101 @@ body span.ilhabela{
     }
 }
 
+/* toasts */
+
+.toast{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+    outline: 0;
+    display: none;
+}
+
+.toast .toast-container.toast-centered{
+    min-height: calc(100% - 3.5rem);
+}
+
+.toast .toast-container{
+    display: flex;
+    margin: 1.75rem auto;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.toast .toast-container .toast-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0.3rem;
+    outline: 0;
+}
+
+.toast .toast-container .toast-content .toast-h{
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.toast .toast-container .toast-content .toast-h h5{
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.toast .toast-container .toast-content .toast-h i{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.toast .toast-container .toast-content .toast-b{
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+.toast .toast-container .toast-content .toast-b ul{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.toast .toast-container .toast-content .toast-b ul li{
+    list-style: disc;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.toast .toast-container .toast-content .toast-b ul li p{
+    font-family: 'Open Sans', sans-serif;
+    color: #727272;
+}
+
+.toast .toast-container .toast-content .toast-b ul .obs-content p{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #727272;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
 /* nav */
 
 .navbar-toggle a{
@@ -731,6 +826,18 @@ body span.ilhabela{
 
 @media screen and (max-width: 960px){
     /* store.html */
+
+    /* toast */
+
+    .toast{
+        overflow-y: auto;
+    }
+
+    .toast .toast-container{
+        padding: 20px;
+    }
+
+    /* main */
 
     .store-main{
         margin-top: -50px;
