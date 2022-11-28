@@ -169,7 +169,10 @@
                                         <span><i class='fa-solid fa-check'></i>Download 100% seguro</span>
                                     </div>
                                     <div class='down-btn'>
-                                        <a href='https://drive.google.com/u/0/uc?id=1e81R0xvbywcJmhsJLcXvNmRIbJhdVvRO&export=download&confirm=t&uuid=d8599dc9-7502-48dd-957c-8e1b937e6dc5'><i class='fa-solid fa-download'></i>Download</a>
+                                        <a onclick="getDownloads('gta');" href='https://drive.google.com/u/0/uc?id=1e81R0xvbywcJmhsJLcXvNmRIbJhdVvRO&export=download&confirm=t&uuid=d8599dc9-7502-48dd-957c-8e1b937e6dc5'><i class='fa-solid fa-download'></i>Download</a>
+                                    </div>
+                                    <div class='down-co'>
+                                        <p><strong id='countergta'>0</strong> Downloads</p>
                                     </div>
                                 </div>
                             </div> <!-- GTASA -->
@@ -187,7 +190,10 @@
                                         <span><i class='fa-solid fa-check'></i>Download 100% seguro</span>
                                     </div>
                                     <div class='down-btn'>
-                                        <a href='https://mirror.s7.mtasa.ohbah.com/mtasa/main/mtasa-1.5.9.exe'><i class='fa-solid fa-download'></i>Download</a>
+                                        <a onclick="getDownloads('mta');" href='https://mirror-cdn.multitheftauto.com/mtasa/main/mtasa-1.5.9.exe'><i class='fa-solid fa-download'></i>Download</a>
+                                    </div>
+                                    <div class='down-co'>
+                                        <p><strong id='countermta'>0</strong> Downloads</p>
                                     </div>
                                 </div>
                             </div> <!-- MTASA -->
@@ -245,6 +251,7 @@
         <!-- js -->
         <script src='assets/js/global.js'></script>
         <script src='assets/js/functions.js'></script>
+        <script src='assets/js/downloads.js'></script>
 
         <!-- jquery -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
