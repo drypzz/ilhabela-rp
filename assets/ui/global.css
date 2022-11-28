@@ -307,6 +307,97 @@ body span.ilhabela{
     transition: all .5s ease-out;
 }
 
+
+
+
+
+
+
+/* rules.html */
+
+/* rules */
+
+.main-rules{
+    margin: 20px;
+}
+
+.main-rules .item-rules{
+    display: none;
+}
+
+.main-rules .item-rules.focus{
+    display: block;
+    padding: 20px;
+    width: 100%;
+}
+
+.main-rules .item-rules .item-rules-container{
+    padding: 20px;
+}
+
+.main-rules .item-rules .item-rules-container .rules-title{
+    margin: 20px 0;
+}
+
+.main-rules .item-rules .item-rules-container .rules-container{
+    font-family: 'Poppins', sans-serif;
+    width: 90vw;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    color: #3f3d3d;
+}
+
+.main-rules .item-rules .item-rules-container .rules-container .rules{
+    margin: 30px 0;
+}
+
+.main-rules .item-rules .item-rules-container .rules-container .rules p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.main-rules .item-rules .item-rules-container .rules-container .rules p span{
+    color: var(--primary);
+}
+
+.main-rules .item-rules .item-rules-container .rules-container .rules span.ex{
+    font-size: 15px;
+    background: #2c2c2c;
+    margin: 10px 0;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.main-rules .item-rules .item-rules-container.roleplay .rules-container .rules p{
+    position: relative;
+}
+
+.main-rules .item-rules .item-rules-container.roleplay .rules-container .rules p:before{
+    position: absolute;
+    content: '•';
+    top: 0;
+    pointer-events: none;
+    left: -15px;
+    font-weight: 900;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* store.html */
 
 /* main */
@@ -392,7 +483,7 @@ body span.ilhabela{
 }
 
 .store-main .store-container .store-container-items .store-content-items{
-    margin: 0 50px;
+    margin: 0 10px;
     width: 100%;
 }
 
@@ -825,6 +916,24 @@ body span.ilhabela{
 }
 
 @media screen and (max-width: 960px){
+    /* rules.html */
+
+    .main-rules .item-rules{
+        padding: 5px;
+    }
+
+    .main-rules .item-rules .item-rules-container{
+        padding: 0;
+    }
+
+    .main-rules .item-rules .item-rules-container .rules-container .rules span.ex{
+        padding: 5px 5px;
+    }
+
+    .main-rules .item-rules .item-rules-container.roleplay .rules-container .rules p:before{
+        left: -13px;
+    }
+
     /* store.html */
 
     /* toast */
