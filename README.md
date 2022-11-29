@@ -4,6 +4,7 @@
 
 <div align='center'>
     <p><strong>Ultima atualização:</strong> 28 Nov. 2022<br><strong>Última versão:</strong> 1.5.0</p>
+    <p>>> <a target='_blank' href='https://ilhabelaroleplay.netlify.app/'><i>https://ilhabelaroleplay.netlify.app/</i></a> <<</p>
 </div>
 
 <div align='center'>
