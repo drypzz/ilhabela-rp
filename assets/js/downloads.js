@@ -1,21 +1,22 @@
+document.getElementById('countermta').innerHTML = (localStorage.clickCounterMTA ?? 0);
+document.getElementById('countergta').innerHTML = (localStorage.clickCounterGTA ?? 0);
 
-// downloads
+// callback
 
-let countgta = 0;
-let countmta = 0;
-
-getDownloads = function(type){
-    if(type == 'gta'){
-        const span = document.querySelector('#countergta');
-
-        let result = (countgta += 1);
-
-        span.innerHTML = (new Intl.NumberFormat('pt-BR').format(result));
-    }else if(type == 'mta'){
-        const span = document.querySelector('#countermta');
-
-        let result = (countmta += 1);
-
-        span.innerHTML = (new Intl.NumberFormat('pt-BR').format(result));
+function clickCounter(int){
+    if (int == 1){
+        if (localStorage.clickCounterMTA) {
+            localStorage.clickCounterMTA = Number(localStorage.clickCounterMTA) + 1;
+        }else{
+            localStorage.clickCounterMTA = 1;
+        };
+        document.getElementById('countermta').innerHTML = localStorage.clickCounterMTA;
+    }else{
+        if (localStorage.clickCounterGTA) {
+            localStorage.clickCounterGTA = Number(localStorage.clickCounterGTA) + 1;
+        }else{
+            localStorage.clickCounterGTA = 1;
+        };
+        document.getElementById('countergta').innerHTML = localStorage.clickCounterGTA;
     };
 };
